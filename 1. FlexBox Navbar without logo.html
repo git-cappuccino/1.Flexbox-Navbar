@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <script src="https://kit.fontawesome.com/577a7fa80a.js" crossorigin="anonymous"></script>
+        <title>Hello ☺</title>
+        <style media="screen">
+
+            * {
+                box-sizing: border-box;
+            }
+
+            body {
+                margin: 0;
+                font-family: sans-serif;
+            }
+
+            .width-limiter {
+                max-width: 1000px;
+                background-color: steelblue;
+                padding: 50px;
+                margin: 0 auto;
+            }
+
+            .flex-nav {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                background-color: #FB3927;
+                display: flex;
+            }
+
+            .flex-nav li {
+                flex:3;
+            }
+
+            .flex-nav .icon {
+                flex:1;
+            }
+
+            a {
+                display:inline-block;
+                /* border: 1px solid black; */
+                width: 100%;
+                padding: 8px 14px;
+                text-decoration: none;
+                text-align: center;
+                color: white;
+                letter-spacing: 3px;
+            }
+
+            a:hover {
+                color: #FB3927;
+                background-color: white;
+            }
+
+            @media all and (max-width:966px) {
+                a {
+                    border-bottom: 1px solid white;
+                }
+
+                .flex-nav {
+                    flex-wrap: wrap;
+                }
+
+                .flex-nav li {
+                    flex: 1 1 33.333%;
+                }
+            }
+
+            @media all and (max-width:600px) {
+                .flex-nav {
+                    flex-wrap: wrap;
+                }
+
+                .flex-nav li {
+                    flex:  1 1 50%;
+                }
+
+                .flex-nav li.icon {
+                    flex: 1 1 33.333%;
+                }
+
+                .flex-nav li.i3 {
+                    flex: 1 1 100%;
+                }
+            }
+
+        </style>
+    </head>
+    <body>
+        <nav class="width-limiter">
+            <ul class="flex-nav">
+                <li>
+                    <a href="#">Home</a>
+                </li>
+
+                <li>
+                    <a href="#">About Us</a>
+                </li>
+
+                <li>
+                    <a href="#">Team</a>
+                </li>
+
+                <li>
+                    <a href="#">Services</a>
+                </li>
+
+                <li>
+                    <a href="#">Blog</a>
+                </li>
+
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+
+                <li class="icon">
+                    <a href="#"><i class="fas fa-user"></i></a>
+                </li>
+
+                <li class="icon">
+                    <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                </li>
+
+                <li class="icon i3">
+                    <a href="#"><i class="fas fa-sign-out-alt"></i></a>
+                </li>
+            </ul>
+        </nav>
+    </body>
+</html>
